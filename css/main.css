@@ -75,10 +75,10 @@ main {
       margin: 0 auto; } }
 
 .clipform {
-  display: inline-block;
   margin: 10px;
   padding: 8px;
   min-width: 280px;
+  width: 280px;
   box-shadow: 1px 1px 10px gray;
   background: #dad8d8;
   border-radius: 10px;
@@ -131,10 +131,7 @@ main {
 .slider {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
   margin: 0 auto;
-  position: absolute;
-  left: 0;
   transition: 1.5s; }
 
 .container {
