@@ -40,9 +40,6 @@ header {
       background: #d9f7f5;
       border-radius: 20px; }
 
-html .wrapper, body .wrapper {
-  max-width: 99999px; }
-
 footer {
   background: #272e2d; }
   footer p {
