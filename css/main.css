@@ -54,7 +54,7 @@ body {
 main {
   position: relative;
   width: 1202px;
-  height: 600px;
+  height: 800px;
   background: white;
   overflow: hidden;
   margin: 10px auto; }
@@ -79,7 +79,9 @@ main {
   box-shadow: 1px 1px 10px gray;
   background: #dad8d8;
   border-radius: 10px;
-  user-select: none; }
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none; }
   .clipform .title {
     background: #8ee6da;
     margin-top: 5px;
@@ -126,10 +128,13 @@ main {
         word-break: normal; }
 
 .slider {
+  position: absolute;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  transition: 1.5s; }
+  transition: 1.5s;
+  -moz-transition: 1.5s;
+  -webkit-transition: 1.5s; }
 
 .container {
   max-width: 1200px;
