@@ -54,7 +54,7 @@ body {
 main {
   position: relative;
   width: 1202px;
-  height: 800px;
+  padding-bottom: 100px;
   background: white;
   overflow: hidden;
   margin: 10px auto; }
@@ -128,13 +128,113 @@ main {
         word-break: normal; }
 
 .slider {
-  position: absolute;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   transition: 1.5s;
   -moz-transition: 1.5s;
   -webkit-transition: 1.5s; }
+
+.control-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 400px;
+  width: 400px;
+  height: 50px; }
+  @media screen and (max-width: 1200px) and (min-width: 920px) {
+    .control-box {
+      left: 260px; } }
+  @media screen and (min-width: 621px) and (max-width: 920px) {
+    .control-box {
+      left: 100px; } }
+  @media screen and (max-width: 620px) {
+    .control-box {
+      left: 0;
+      width: 302px; } }
+  .control-box .circle0 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #dad8d8;
+    box-shadow: 3px 3px 8px gray;
+    transition: 250ms;
+    transition-delay: 250ms; }
+    .control-box .circle0:hover {
+      transition: 250ms;
+      transform: scale(1.5, 1.5);
+      box-shadow: 10px 10px 15px gray; }
+    .control-box .circle0:active {
+      transition: 250ms;
+      transform: scale(1.2, 1.2);
+      box-shadow: 5px 5px 10px gray; }
+  .control-box .circle1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #dad8d8;
+    box-shadow: 3px 3px 8px gray;
+    transition: 250ms;
+    transition-delay: 250ms; }
+    .control-box .circle1:hover {
+      transition: 250ms;
+      transform: scale(1.5, 1.5);
+      box-shadow: 10px 10px 15px gray; }
+    .control-box .circle1:active {
+      transition: 250ms;
+      transform: scale(1.2, 1.2);
+      box-shadow: 5px 5px 10px gray; }
+  .control-box .circle2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #dad8d8;
+    box-shadow: 3px 3px 8px gray;
+    transition: 250ms;
+    transition-delay: 250ms; }
+    .control-box .circle2:hover {
+      transition: 250ms;
+      transform: scale(1.5, 1.5);
+      box-shadow: 10px 10px 15px gray; }
+    .control-box .circle2:active {
+      transition: 250ms;
+      transform: scale(1.2, 1.2);
+      box-shadow: 5px 5px 10px gray; }
+  .control-box .circle3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #dad8d8;
+    box-shadow: 3px 3px 8px gray;
+    transition: 250ms;
+    transition-delay: 250ms; }
+    .control-box .circle3:hover {
+      transition: 250ms;
+      transform: scale(1.5, 1.5);
+      box-shadow: 10px 10px 15px gray; }
+    .control-box .circle3:active {
+      transition: 250ms;
+      transform: scale(1.2, 1.2);
+      box-shadow: 5px 5px 10px gray; }
+  .control-box .circle4 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #dad8d8;
+    box-shadow: 3px 3px 8px gray;
+    transition: 250ms;
+    transition-delay: 250ms; }
+    .control-box .circle4:hover {
+      transition: 250ms;
+      transform: scale(1.5, 1.5);
+      box-shadow: 10px 10px 15px gray; }
+    .control-box .circle4:active {
+      transition: 250ms;
+      transform: scale(1.2, 1.2);
+      box-shadow: 5px 5px 10px gray; }
 
 .container {
   max-width: 1200px;
