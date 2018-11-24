@@ -40,14 +40,6 @@ header {
       background: #d9f7f5;
       border-radius: 20px; }
 
-footer {
-  background: #272e2d; }
-  footer p {
-    font-family: 'Lato',Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    font-size: 1.1em;
-    color: #d1f1ea; }
-
 body {
   background: white; }
 
@@ -58,6 +50,26 @@ main {
   background: white;
   overflow: hidden;
   margin: 10px auto; }
+  main .infowindow {
+    position: absolute;
+    bottom: 15%;
+    left: 44%;
+    border-radius: 10px;
+    background: #dad8d8;
+    box-shadow: 10px 10px 20px gray, -10px -10px 20px gray;
+    transition: 250ms;
+    transition-delay: 250ms;
+    opacity: 0;
+    z-index: 5; }
+    @media screen and (max-width: 620px) {
+      main .infowindow {
+        left: 25%; } }
+    main .infowindow p {
+      font-family: 'Boogaloo', Arial, Helvetica, sans-serif;
+      font-size: 1.5em;
+      color: #979696;
+      padding: 5px 20px;
+      text-shadow: 2px 2px 5px white; }
   @media screen and (max-width: 1200px) {
     main {
       width: 902px;
@@ -144,7 +156,11 @@ main {
   bottom: 30px;
   left: 400px;
   width: 400px;
-  height: 50px; }
+  height: 50px;
+  font-family: 'Boogaloo',Arial, Helvetica, sans-serif;
+  font-weight: 900; }
+  .control-box p {
+    color: #979696; }
   @media screen and (max-width: 1200px) and (min-width: 920px) {
     .control-box {
       left: 260px; } }
@@ -163,13 +179,17 @@ main {
     box-shadow: 3px 3px 8px gray;
     transition: 250ms;
     transition-delay: 250ms; }
+    .control-box .circle0 p {
+      font-size: 0.9em;
+      padding: 5px 2px;
+      text-shadow: 2px 2px 5px white; }
     .control-box .circle0:hover {
       transition: 250ms;
-      transform: scale(1.5, 1.5);
-      box-shadow: 10px 10px 15px gray; }
+      transform: scale(1.3, 1.3);
+      box-shadow: 10px 10px 12px gray; }
     .control-box .circle0:active {
       transition: 250ms;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.1, 1.1);
       box-shadow: 5px 5px 10px gray; }
   .control-box .circle1 {
     width: 35px;
@@ -179,13 +199,17 @@ main {
     box-shadow: 3px 3px 8px gray;
     transition: 250ms;
     transition-delay: 250ms; }
+    .control-box .circle1 p {
+      font-size: 1.2em;
+      padding: 5px 8px;
+      text-shadow: 2px 2px 5px white; }
     .control-box .circle1:hover {
       transition: 250ms;
-      transform: scale(1.5, 1.5);
-      box-shadow: 10px 10px 15px gray; }
+      transform: scale(1.3, 1.3);
+      box-shadow: 10px 10px 12px gray; }
     .control-box .circle1:active {
       transition: 250ms;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.1, 1.1);
       box-shadow: 5px 5px 10px gray; }
   .control-box .circle2 {
     width: 45px;
@@ -195,29 +219,37 @@ main {
     box-shadow: 3px 3px 8px gray;
     transition: 250ms;
     transition-delay: 250ms; }
+    .control-box .circle2 p {
+      font-size: 2em;
+      padding: 5px 17px;
+      text-shadow: 2px 2px 5px white; }
     .control-box .circle2:hover {
       transition: 250ms;
-      transform: scale(1.5, 1.5);
-      box-shadow: 10px 10px 15px gray; }
+      transform: scale(1.3, 1.3);
+      box-shadow: 10px 10px 12px gray; }
     .control-box .circle2:active {
       transition: 250ms;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.1, 1.1);
       box-shadow: 5px 5px 10px gray; }
   .control-box .circle3 {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: #dad8d8;
     box-shadow: 3px 3px 8px gray;
     transition: 250ms;
     transition-delay: 250ms; }
+    .control-box .circle3 p {
+      font-size: 1.2em;
+      padding: 5px 10px;
+      text-shadow: 2px 2px 5px white; }
     .control-box .circle3:hover {
       transition: 250ms;
-      transform: scale(1.5, 1.5);
-      box-shadow: 10px 10px 15px gray; }
+      transform: scale(1.3, 1.3);
+      box-shadow: 10px 10px 12px gray; }
     .control-box .circle3:active {
       transition: 250ms;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.1, 1.1);
       box-shadow: 5px 5px 10px gray; }
   .control-box .circle4 {
     width: 30px;
@@ -227,13 +259,17 @@ main {
     box-shadow: 3px 3px 8px gray;
     transition: 250ms;
     transition-delay: 250ms; }
+    .control-box .circle4 p {
+      font-size: 0.9em;
+      padding: 5px 4px;
+      text-shadow: 2px 2px 5px white; }
     .control-box .circle4:hover {
       transition: 250ms;
-      transform: scale(1.5, 1.5);
-      box-shadow: 10px 10px 15px gray; }
+      transform: scale(1.3, 1.3);
+      box-shadow: 10px 10px 12px gray; }
     .control-box .circle4:active {
       transition: 250ms;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.1, 1.1);
       box-shadow: 5px 5px 10px gray; }
 
 .container {
